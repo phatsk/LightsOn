@@ -7,26 +7,13 @@ Pebble.addEventListener('showConfiguration', function(e){
 });
 
 Pebble.addEventListener('webviewclosed', function(e){
-  logInfo('Starting save lc');
   if (e && !e.response) {
     logError( 'Whoops' );
     return;
   }
 
   var dict = clay.getSettings(e.response);
-  logInfo(dict);
-  //Settings.option(dict);
-});
-
-Pebble.addEventListener('webviewClosed', function(e){
-  logInfo('Starting save');
-  if (e && !e.response) {
-    logError( 'Whoops' );
-    return;
-  }
-
-  var dict = clay.getSettings(e.response);
-  logInfo(dict);
+  logInfo(JSON.stringify(dict));
   //Settings.option(dict);
 });
 
