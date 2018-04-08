@@ -1,5 +1,5 @@
 // Set to true to always pull fresh data - use sparingly!
-var ui = require('ui');
+var UI = require('ui');
 
 var card = new UI.Card({
   title: 'Hello World',
