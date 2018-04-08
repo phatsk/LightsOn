@@ -1,6 +1,21 @@
 var Clay = require('clay');
 var clayConfig = require('config');
-var clay = new Clay(clayConfig);
+var clay = new Clay(clayConfig, null, {autoHandleEvents: false});
+
+Pebble.addEventListener('showConfiguration', function(e){
+  Pebble.openURL(clay.generateURL());
+});
+
+Pebble.addEventListener('webviewClosed', function(e){
+  if (e && !e.response) {
+    return;
+  }
+
+  var dict = clay.getSettings(e.response);
+  console.log(dict);
+  debugger
+  //Settings.option(dict);
+});
 
 var UI = require('ui');
 
