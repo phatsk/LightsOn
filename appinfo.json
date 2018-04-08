@@ -1,0 +1,31 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "380c1",
+    "longName": "LightsOn",
+    "projectType": "pebblejs",
+    "resources": {
+	"media": []
+    },
+    "resources_OFF": {
+        "media": [{
+			"menuIcon": true,
+			"file": "images/destiny.png",
+			"name": "IMAGE_MENU_ICON",
+			"type": "png"
+		},{
+			"file": "fonts/UbuntuMono-Regular.ttf",
+			"name": "MONO_FONT_14",
+			"type": "font"
+		}]
+    },
+    "shortName": "LightsOn",
+    "uuid": "db00aa93-aee5-dd4b-223f-ab8ffaac3223",
+    "versionCode": 1,
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": false
+    }
+}
