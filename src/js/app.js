@@ -1,4 +1,7 @@
-// Set to true to always pull fresh data - use sparingly!
+var Clay = require('clay');
+var clayConfig = require('config.json');
+var clay = new Clay(clayConfig);
+
 var UI = require('ui');
 
 var card = new UI.Card({
