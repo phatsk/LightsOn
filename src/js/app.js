@@ -8,12 +8,12 @@ Pebble.addEventListener('showConfiguration', function(e){
 
 Pebble.addEventListener('webviewClosed', function(e){
   if (e && !e.response) {
+    logError( 'Whoops' );
     return;
   }
 
   var dict = clay.getSettings(e.response);
-  console.log(dict);
-  debugger
+  logInfo(dict);
   //Settings.option(dict);
 });
 
