@@ -3,7 +3,7 @@ var clayConfig = require('config');
 var clay = new Clay(clayConfig, null, {autoHandleEvents: false});
 
 Pebble.addEventListener('showConfiguration', function(e){
-  Pebble.openURL(clay.generateURL());
+  Pebble.openURL(clay.generateUrl());
 });
 
 Pebble.addEventListener('webviewClosed', function(e){
