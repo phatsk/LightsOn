@@ -15,6 +15,16 @@
                 "type": "bitmap"
             },
             {
+                "file": "images/logo_splash.png",
+                "name": "IMAGE_LOGO_SPLASH",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGE_TILE_SPLASH",
+                "type": "bitmap"
+            },
+            {
                 "file": "fonts/UbuntuMono-Regular.ttf",
                 "name": "MONO_FONT_14",
                 "type": "font"
@@ -28,6 +38,11 @@
     },
     "sdkVersion": "3",
     "shortName": "Testing",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
     "uuid": "1f1320a0-f5db-4181-bf01-6b8fc9de6b1e",
     "versionCode": 1,
     "versionLabel": "1.0",
