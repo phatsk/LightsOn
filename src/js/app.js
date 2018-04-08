@@ -13,6 +13,7 @@ Pebble.addEventListener('webviewclosed', function(e){
   }
 
   var dict = clay.getSettings(e.response);
+  logInfo(e.response);
   logInfo(JSON.stringify(dict));
   //Settings.option(dict);
 });
