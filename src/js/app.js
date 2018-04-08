@@ -1,5 +1,5 @@
 var Clay = require('clay');
-var clayConfig = require('config.json');
+var clayConfig = require('config');
 var clay = new Clay(clayConfig);
 
 var UI = require('ui');
