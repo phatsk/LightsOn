@@ -15,8 +15,8 @@ Pebble.addEventListener('webviewclosed', function(e){
   var dict = clay.getSettings(e.response);
   logInfo(e.response);
   logInfo(JSON.stringify(dict));
-  logInfo(clay.getItemsById('vsEmail'));
-  logInfo(clay.getItemsById('vsPass'));
+  logInfo(clay.getItemById('vsEmail'));
+  logInfo(clay.getItemById('vsPass'));
   //Settings.option(dict);
 });
 
