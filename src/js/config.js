@@ -5,6 +5,7 @@ module.exports = [{
   "type": "section",
   "items": [{
     "type": "input",
+    "id": "vsEmail",
     "messageKey": "email",
     "defaultValue": "",
     "label": "Email Address",
@@ -14,6 +15,7 @@ module.exports = [{
     }
   },{
     "type": "input",
+    "id": "vsPass",
     "messageKey": "password",
     "defaultValue": "",
     "label": "Password",
