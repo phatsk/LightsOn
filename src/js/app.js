@@ -13,11 +13,10 @@ Pebble.addEventListener('webviewclosed', function(e){
   }
 
   var dict = clay.getSettings(e.response);
-  logInfo(e.response);
-  logInfo(JSON.stringify(dict));
-  logInfo(clay.getItemByAppKey('vsEmail'));
-  //logInfo(clay.getItemById('vsPass'));
-  //Settings.option(dict);
+  var email = dict.vsEmail;
+  var pass = dict.vsPass;
+
+  logInfo([email, pass]);
 });
 
 var UI = require('ui');

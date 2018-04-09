@@ -1,6 +1,7 @@
 {
     "appKeys": {
-        "vsEmail": ""
+        "vsEmail": "",
+        "vsPass": ""
     },
     "capabilities": [
         "configurable"

@@ -17,6 +17,7 @@ module.exports = [{
   },{
     "type": "input",
     "id": "vsPass",
+    "appKey": "vsPass",
     "messageKey": "password",
     "defaultValue": "",
     "label": "Password",
