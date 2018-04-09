@@ -6,6 +6,7 @@ module.exports = [{
   "items": [{
     "type": "input",
     "id": "vsEmail",
+    "appKey": "vsEmail",
     "messageKey": "email",
     "defaultValue": "",
     "label": "Email Address",
