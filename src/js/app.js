@@ -13,10 +13,7 @@ Pebble.addEventListener('webviewclosed', function(e){
   }
 
   var dict  = clay.getSettings(e.response);
-  var email = dict.vsEmail;
-  var pass  = dict.vsPass;
-
-  logInfo([email, pass]);
+  Settings.option(dict);
 });
 
 var UI = require('ui');
@@ -28,6 +25,10 @@ var card = new UI.Card({
 });
 
 card.show();
+
+$('#authorize').on('click', function(e){
+  console.log(JSON.stringify(e));
+});
 
 function log(prefix, message)
 {
