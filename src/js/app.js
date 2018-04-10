@@ -1,7 +1,8 @@
 var Settings   = require('settings');
 var ClayObject = require('clay');
 var clayConfig = require('config');
-var customClay = require('./custom-clay');
+var customClay = require('./custom-clay.js');
+console.log(JSON.stringify(clayConfig));
 console.log(JSON.stringify(customClay));
 var clay       = new ClayObject(clayConfig, customClay, {autoHandleEvents: false});
 
