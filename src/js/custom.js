@@ -4,5 +4,5 @@ module.exports = function(minified) {
   var $ = minified.$;
   var HTML = minified.HTML;
 
-  console.log(JSON.stringify(clayConfig));
+  console.log('iiiiiii');
 };
