@@ -1,9 +1,8 @@
 var Settings   = require('settings');
 var ClayObject = require('clay');
 var clayConfig = require('config');
-var clay       = new ClayObject(clayConfig, function(){
-  console.log(this)
-}, {autoHandleEvents: false});
+var customClay = require('custom-clay');
+var clay       = new ClayObject(clayConfig, customClay, {autoHandleEvents: false});
 
 Pebble.addEventListener('showConfiguration', function(e){
   Pebble.openURL(clay.generateUrl());
