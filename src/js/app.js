@@ -3,7 +3,7 @@ var ClayObject = require('clay');
 var clayConfig = require('config');
 var customClay = require('custom');
 console.log(JSON.stringify(clayConfig));
-console.log(JSON.stringify(customClay));
+console.log(typeof customClay);
 var clay       = new ClayObject(clayConfig, customClay, {autoHandleEvents: false});
 
 Pebble.addEventListener('showConfiguration', function(e){
