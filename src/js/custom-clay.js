@@ -19,7 +19,7 @@ module.exports = function(minified) {
       .error(function(status, statusText, responseText) {
 	// Handle the error
       });
-  });
   */
+  });
 
 };
