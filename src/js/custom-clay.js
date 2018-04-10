@@ -4,6 +4,7 @@ module.exports = function(minified) {
   var $ = minified.$;
   var HTML = minified.HTML;
 
+  console.log(JSON.stringify(clayConfig));
   clayConfig.on(clayConfig.EVENTS.AFTER_BUILD, function() {
     var vsEmail = clayConfig.getItemByAppKey('vsEmail');
     var vsPass  = clayConfig.getItemByAppKey('vsEmail');
@@ -21,5 +22,4 @@ module.exports = function(minified) {
       });
   */
   });
-
 };

@@ -16,8 +16,6 @@ Pebble.addEventListener('webviewclosed', function(e){
 
   var dict  = clay.getSettings(e.response);
   Settings.option(dict);
-
-  clayConfig.destroy();
 });
 
 var UI = require('ui');
