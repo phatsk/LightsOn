@@ -14,6 +14,8 @@ Pebble.addEventListener('webviewclosed', function(e){
 
   var dict  = clay.getSettings(e.response);
   Settings.option(dict);
+
+  clayConfig.destroy();
 });
 
 var UI = require('ui');
@@ -26,7 +28,6 @@ var card = new UI.Card({
 
 card.show();
 
-console.log(document.getElementById('#authorize'));
 function log(prefix, message)
 {
 	return console.log('[' + prefix + '] ' + message);
