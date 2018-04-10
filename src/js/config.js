@@ -33,5 +33,8 @@ module.exports = [{
   "defaultValue": "Your account email and password are only used to authorize you with VeSync's servers. Your infromation is not stored."
 },{
   "type": "submit",
-  "defaultValue": "Authorize"
+  "defaultValue": "Authorize",
+  "attributes": {
+    "id": "authorize"
+  }
 }];
