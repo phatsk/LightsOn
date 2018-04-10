@@ -1,3 +1,4 @@
+var Settings   = require('settings');
 var ClayObject = require('clay');
 var clayConfig = require('config');
 var clay       = new ClayObject(clayConfig, null, {autoHandleEvents: false});
