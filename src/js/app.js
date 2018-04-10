@@ -1,6 +1,6 @@
-var Clay = require('clay');
+var ClayObject = require('clay');
 var clayConfig = require('config');
-var clay = new Clay(clayConfig, null, {autoHandleEvents: false});
+var clay       = new ClayObject(clayConfig, null, {autoHandleEvents: false});
 
 Pebble.addEventListener('showConfiguration', function(e){
   Pebble.openURL(clay.generateUrl());
@@ -12,9 +12,9 @@ Pebble.addEventListener('webviewclosed', function(e){
     return;
   }
 
-  var dict = clay.getSettings(e.response);
+  var dict  = clay.getSettings(e.response);
   var email = dict.vsEmail;
-  var pass = dict.vsPass;
+  var pass  = dict.vsPass;
 
   logInfo([email, pass]);
 });
