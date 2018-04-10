@@ -26,10 +26,7 @@ var card = new UI.Card({
 
 card.show();
 
-$('#authorize').on('click', function(e){
-  console.log(JSON.stringify(e));
-});
-
+console.log(document.getElementById('#authorize'));
 function log(prefix, message)
 {
 	return console.log('[' + prefix + '] ' + message);
